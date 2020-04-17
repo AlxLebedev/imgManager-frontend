@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.drag-and-drop-field {
+  margin: 50px auto 10px auto;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px 10px;
+  width: 500px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #666262;
+  cursor: pointer;
+}
+
+.dragover {
+  background-color: aqua;
+}
+
+#select-file-button {
+  position: absolute;
+  top: -30px;
+}
+
+/* #add-img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 5px 20px;
+  border-radius: 10px;
+} */
+
+#error-message {
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 0 auto;
+  border: 1px solid;
+  border-radius: 10px;
+  max-width: 840px;
+  min-height: 202px;
+  background-color: rgb(212, 239, 248);
+}
+
+.image-element {
+  width: 150px;
+  height: 150px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 25px;
+}
+
+.remove-image{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    right: -30px;
+    border: 1px solid;
+    background-color: #fac6c6;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.image-item {
+  height: 100%;
+  overflow: hidden;
+}
