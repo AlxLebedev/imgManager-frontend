@@ -13,7 +13,7 @@ export default class ImageConstructor {
       formData.append('file', image);
       const xhr = new XMLHttpRequest();
       xhr.open('POST', `${this.server}`);
-  
+
       xhr.addEventListener('load', () => {
         if (xhr.status >= 200 && xhr.status < 300) {
           const imageURL = `${this.server}/${xhr.response}`;
